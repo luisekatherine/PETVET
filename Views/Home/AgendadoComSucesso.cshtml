@@ -1,0 +1,15 @@
+@{
+    ViewData["Title"]= "Agendamento concluído";
+}
+@model List<PreAgendamento>
+<body style="background-color: azure; opacity: inherit; text-align: center;">
+<h3>Agendamento realizado com sucesso!</h3>
+<br>
+<img src="~/img/sucesso.jpg" width="200">
+<img src="~/img/sucesso2.jpg" width="190">
+<br>
+<p>💚</p>
+<p>Para agendar mais serviços, <a asp-action="Agendamento">clique aqui!</a></p>
+<p>Quer conhecer tudo que a PETVET oferece?<a asp-action="Serviços"> Clique aqui!</a></p>
+<p>Deseja visualizar seu agendamento? <a asp-action="Lista">Clique aqui!</a></p>
+</body>

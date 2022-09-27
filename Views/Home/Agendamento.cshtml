@@ -1,0 +1,40 @@
+﻿@model PreAgendamento;
+@{
+    ViewData["Title"] = "Pré Agendamento";
+}
+
+<body style="background-color: lightyellow; text-align: right;">
+<table>
+    <tr>
+        <td>
+            <img src="~/img/agendar.jpg" width="400">
+        </td>
+<form method="post">
+    <td>
+<h2 style="text-align: right; color: hotpink;">Vamos agendar?</h2>
+<h5 style="text-align: right; color: hotpink;">Preencha os campos abaixo:</h5>
+<br>
+<label asp-for="seunome">▫️</label>
+<input asp-for="seunome" placeholder="Digite seu nome:" required>
+<br>
+<label asp-for="nomeanimal">▫️</label>
+<input asp-for="nomeanimal" placeholder="Digite o nome do animal:" required>
+<br>
+<label asp-for="telefone">▫️</label>
+<input asp-for="telefone" placeholder="Digite seu telefone:" required>
+<br>
+<label asp-for="data">▫️</label>
+<input asp-for="data" placeholder="Escolha a data e hora" required>
+<br>
+<label asp-for="animal">▫️</label>
+<input asp-for="animal" placeholder="Dgite o animal:" required>
+<br>
+<label asp-for="necessidade">▫️</label>
+<input asp-for="necessidade" placeholder="Digite a necessidade:" required>
+<br>
+<input type="submit" value="Agendar">
+</form>
+    </td>
+    </tr>
+</table>
+</body>
